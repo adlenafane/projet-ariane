@@ -1,0 +1,29 @@
+$brand-primary: #06979e;
+$white: #FFF;
+$body-bg: $white;
+$navbar-inverse-bg: $body-bg;
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+$font-family-sans-serif: 'Lato', Helvetica, Arial, sans-serif !default;
+
+@import "../public/lib/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../public/modules/core/style/core-style";
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    color: $brand-primary;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $brand-primary;
+    }
+  }
+}
+
+
